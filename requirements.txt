@@ -1,0 +1,6 @@
+streamlit
+pandas
+plost
+pandasql
+datetime
+altair
