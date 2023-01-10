@@ -29,6 +29,30 @@ protocol2Loader = {
     'ApolloX':'apollox.csv'
     } 
 st.sidebar.markdown('''
+    ---
+''')
+st.sidebar.subheader('''
+🗝️ Key takeaways 🗝️
+''')
+
+if (selected_protocol == 'GMX'):
+    st.sidebar.markdown('''
+    GMX, the dominant player in the space by TVL has around 40% of it's TVL in GMX tokens staked mostly on arbitrum. While their USDC TVL from their business is increasing this proportion is still very high compared to dYdX or Perpetual Protocol
+    ''')
+elif (selected_protocol == 'dYdX'):
+    st.sidebar.markdown('''
+    Compared to the others dYdX has the most stable business model. It has always converted deposits to USDC and this is the basis of settlement on the exchange. While they may be currently smaller than GMX with 393 M USD locked, any market fluctuations are more likely to strengthen their position as they are not directly exposed.
+    ''')
+elif (selected_protocol == 'Perpetual Protocol'):
+    st.sidebar.markdown('''
+    Perpetual Protocol used to have TVLs near 600 M USD before 2021 November, but most of this value was in PERP tokens staked on the ethereum chain. The staked token proportion of their TVL has collapsed by now (below 5%). What remains is 'real' business on their platform in the form of ~8.5 M locked USDC.
+    ''')
+elif (selected_protocol == 'ApolloX'):
+    st.sidebar.markdown('''
+    ApolloX's exposure to their own token remains limited around 25%. Most of their TVL (around 20 M USD) is from deposits locked with their exchange on BSC.
+    ''')
+
+st.sidebar.markdown('''
 ---
 Created with ❤️ by [@Elv1s_Crypto](https://twitter.com/Elv1s_Crypto/).
 ---
